@@ -1,6 +1,5 @@
-// CAPTAIN SLOG
 // vim: set expandtab tabstop=4 shiftwidth=4 autoindent smartindent:
-// File         : 
+// File         : core_spec.js 
 // System       : rr-C3I 
 // Date         : July  2016
 // Author       : Mark Addinall
@@ -13,3 +12,25 @@
 //                It makes use of chai and chai-immutable.  This REDUX
 //                model relies heavily on a test driven development
 //                paradigm.
+//
+import {List, Map} from 'immutable';
+import {expect} from 'chai';
+
+import {setEntries} from '../src/core';
+
+describe('application logic', () => {
+    describe('setEntries', () => {
+
+        it('adds the entries to the state', () => {
+            const state = Map();
+            const entries = List.of('Trainspotting', '28 Days Later');
+            const nextState = setEntries(state, entries);
+            expect(nextState).to.equal(Map({
+                entries: List.of('Trainspotting', '28 Days Later')
+            }));
+        });
+    });
+});
+
+
+//----------------  EOF -------------------------------

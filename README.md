@@ -13,6 +13,9 @@ I have built
 - METEOR - REACT full stack through to MONGO data server
 - This REDUX - REACT full stack through to MONGO data server
 
+This build makes use of mocha, chai, immutable, chai immutable and babel.  It relies heavily on a
+test driven development paradigm.
+
 ![alt text](c3i.png "Sample mapping page")
 
 Why all of this work?
