@@ -1,29 +1,47 @@
 {
-  "name": "voting",
+  "name": "rr-c3i",
   "version": "1.0.0",
-  "description": "",
+  "description": "Asset management and tracking using React-Redux",
   "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
   "scripts": {
-    "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive",
-    "test:watch": "npm run test -- --watch"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "babel": {
-    "presets": [
-      "es2015"
-    ]
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/addinall/rr-C3I.git"
   },
-  "keywords": [],
+  "keywords": [
+    "React",
+    "Redux",
+    "Immutable",
+    "Bootstrap",
+    "Mongo"
+  ],
   "author": "Mark Addinall - Brisbane",
   "license": "ISC",
-  "devDependencies": {
-    "babel-cli": "^6.11.4",
-    "babel-core": "^6.11.4",
-    "babel-preset-es2015": "^6.9.0",
-    "chai": "^3.5.0",
-    "mocha": "^2.5.3"
+  "bugs": {
+    "url": "https://github.com/addinall/rr-C3I/issues"
   },
+  "homepage": "https://github.com/addinall/rr-C3I#readme",
   "dependencies": {
-    "chai-immutable": "^1.6.0",
-    "immutable": "^3.8.1"
+    "immutable": "^3.8.1",
+    "react": "^15.2.1",
+    "react-dom": "^15.2.1",
+    "react-redux": "^4.4.5",
+    "redux": "^3.5.2"
+  },
+  "devDependencies": {
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.11.1",
+    "webpack": "^1.13.1"
+  }
+  "script": {
+	"build": "webpack --debug"
   }
 }
+
+
