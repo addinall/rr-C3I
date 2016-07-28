@@ -31,7 +31,7 @@ Asset.propTypes = {
     text: PropTypes.string.isRequired
 }
 
-export defauly Asset
+export default Asset
 
 //-----------  EOF  --------------------
 //
